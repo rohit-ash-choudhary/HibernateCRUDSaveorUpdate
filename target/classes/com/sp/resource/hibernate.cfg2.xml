@@ -1,0 +1,22 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection properties -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mydb?useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Rooh@#2001</property>
+        
+        <!-- Other properties -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        
+        <!-- Schema update mode -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <!-- MySQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        
+        <!-- Entity mappings -->
+        <mapping class="com.sp.beans.Account"/>
+    </session-factory>
+</hibernate-configuration>
